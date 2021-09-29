@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=256 height=240></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -27,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/p1_gold_webgl.loader.js";
+      var loaderUrl = buildUrl + "/EECS_494_P1_Gold.loader.js";
       var config = {
-        dataUrl: buildUrl + "/p1_gold_webgl.data.br",
-        frameworkUrl: buildUrl + "/p1_gold_webgl.framework.js.br",
-        codeUrl: buildUrl + "/p1_gold_webgl.wasm.br",
+        dataUrl: buildUrl + "/EECS_494_P1_Gold.data",
+        frameworkUrl: buildUrl + "/EECS_494_P1_Gold.framework.js",
+        codeUrl: buildUrl + "/EECS_494_P1_Gold.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "p1_zelda_bjthomas_aaronko",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "256px";
+        canvas.style.height = "240px";
       }
       loadingBar.style.display = "block";
 
